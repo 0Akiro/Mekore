@@ -64,10 +64,8 @@ Mekore is a Python script that allows you to download images from a website, wit
 - `--block_list BLOCK_LIST_FILE`: File containing a list of blocked filenames.
 - `--allow_list ALLOW_LIST_FILE`: File containing a list of allowed filenames.
 
-## Example
-
-Suppose you want to download images from `https://example.com`, blocking images with filenames listed in `blocked.txt` and allowing only images with filenames listed in `allowed.txt`. You would run:
+## Termux
 
 ```bash
-python mekore.py https://example.com --block_list blocked.txt --allow_list allowed.txt
+pkg install git python3 python-pip && git clone https://github.com/0akiro/mekore && cd mekore && pip install -r requirements.txt
 
